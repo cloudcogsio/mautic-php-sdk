@@ -1,0 +1,29 @@
+{
+  "name":"cloudcogsio/mautic-php-sdk",
+  "type": "library",
+  "version": "1.0",
+  "license" : "MIT",
+  "authors" : [{
+    "name" : "Ricardo Assing",
+    "email" : "ricardo@tsiana.ca"
+  }
+  ],
+  "keywords" : [
+    "cloudcogs",
+    "cloudcogs.io",
+    "mautic",
+    "sdk"
+  ],
+  "description" : "PHP library that simplifies interaction with the Mautic REST API. Built on top of the official Mautic PHP API library",
+  "minimum-stability" : "dev",
+  "autoload": {
+    "psr-4": {
+      "Cloudcogs\\MauticPHP\\": "src"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "guzzlehttp/guzzle": "^7.8.2",
+    "mautic/api-library": "^4.0.0-beta"
+  }
+}
