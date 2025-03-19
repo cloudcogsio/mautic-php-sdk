@@ -20,7 +20,7 @@ Once installed, you can quickly start interacting with the **Mautic API** using 
 
 ---
 
-## 1️⃣ Setup Configuration
+## 1. Setup Configuration
 Before initializing the SDK, create a `config.php`. See `config.dist.php` for a template.
 The SDK uses BasicAuth by default. OAuth2 support not available, but you can provide your own `$auth` object for usage.
 ```php
@@ -37,7 +37,7 @@ return [
 ];
 ```
 
-## 2️⃣ Initialize the SDK
+## 2. Initialize the SDK
 
 ```php
 require_once './vendor/autoload.php';
@@ -52,10 +52,10 @@ $config = new Config(require_once './config/config.php');
 $mautic = new SDK($config);
 ```
 
-## 3️⃣ Fetch and Display a Contact
+## 3. Fetch and Display a Contact
 
 ```php
-// Not $auth provided, BasicAuth will be used.
+// No $auth provided, BasicAuth will be used.
 $contactsAPI = $mautic->getContactsApi();
 ```
 
