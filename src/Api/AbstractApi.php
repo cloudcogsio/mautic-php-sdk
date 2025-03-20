@@ -2,14 +2,12 @@
 
 namespace Cloudcogs\MauticPHP\Api;
 
-use Cloudcogs\MauticPHP\Api\Contacts\Contact;
-use Cloudcogs\MauticPHP\Api\Contacts\NewContact;
 use Cloudcogs\MauticPHP\Api\Exceptions\ApiError;
 use Cloudcogs\MauticPHP\Api\Exceptions\UndefinedResponse;
 use Cloudcogs\MauticPHP\SDK;
 use Mautic\Api\Api;
 
-abstract class AbstractAPI
+abstract class AbstractApi
 {
     protected Api $context;
     protected SDK $sdk;
