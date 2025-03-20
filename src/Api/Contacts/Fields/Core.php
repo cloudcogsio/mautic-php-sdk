@@ -17,7 +17,7 @@ class Core extends \ArrayObject
         return $this->data;
     }
 
-    public function getTitle(bool $returnObject = false): string|Field
+    public function getTitle(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['title'])) return '';
 
@@ -28,7 +28,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getFirstName(bool $returnObject = false): string|Field
+    public function getFirstName(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['firstname'])) return '';
 
@@ -39,7 +39,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getLastName(bool $returnObject = false): string|Field
+    public function getLastName(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['lastname'])) return '';
 
@@ -61,7 +61,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getCompany(bool $returnObject = false): string|Field
+    public function getCompany(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['company'])) return '';
 
@@ -72,7 +72,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getPosition(bool $returnObject = false): string|Field
+    public function getPosition(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['position'])) return '';
 
@@ -83,7 +83,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getPhone(bool $returnObject = false): string|Field
+    public function getPhone(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['phone'])) return '';
 
@@ -94,7 +94,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getMobile(bool $returnObject = false): string|Field
+    public function getMobile(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['mobile'])) return '';
 
@@ -105,7 +105,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getWebsite(bool $returnObject = false): string|Field
+    public function getWebsite(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['website'])) return '';
 
@@ -116,7 +116,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getPoints(bool $returnObject = false): int|Field
+    public function getPoints(bool $returnObject = false): int|Field|null
     {
         if (!isset($this->data['points'])) return 0;
 
@@ -127,7 +127,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getAddress1(bool $returnObject = false): string|Field
+    public function getAddress1(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['address1'])) return '';
 
@@ -138,7 +138,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getAddress2(bool $returnObject = false): string|Field
+    public function getAddress2(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['address2'])) return '';
 
@@ -149,7 +149,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getCity(bool $returnObject = false): string|Field
+    public function getCity(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['city'])) return '';
 
@@ -160,7 +160,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getState(bool $returnObject = false): string|Field
+    public function getState(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['state'])) return '';
 
@@ -171,7 +171,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getZipcode(bool $returnObject = false): string|Field
+    public function getZipcode(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['zipcode'])) return '';
 
@@ -182,7 +182,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getCountry(bool $returnObject = false): string|Field
+    public function getCountry(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['country'])) return '';
 
@@ -193,7 +193,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getTimezone(bool $returnObject = false): string|Field
+    public function getTimezone(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['timezone'])) return '';
 
@@ -204,7 +204,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getAttributionDate(bool $returnObject = false): string|Field
+    public function getAttributionDate(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['attribution_date'])) return '';
 
@@ -215,7 +215,7 @@ class Core extends \ArrayObject
         }
     }
 
-    public function getAttribution(bool $returnObject = false): string|Field
+    public function getAttribution(bool $returnObject = false): string|Field|null
     {
         if (!isset($this->data['attribution'])) return '';
 
